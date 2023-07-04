@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\xcsf.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\xcsf.dir/objects.a @CMakeFiles\xcsf.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe  -W -Wall -Wextra  -Wunused  -Wfatal-errors -Wcast-qual -Wredundant-decls -Winit-self -pedantic -Wno-unused-function -pipe -Wmaybe-uninitialized -fPIC -O3 -march=native -flto -funroll-loops -ffat-lto-objects -fno-semantic-interposition -shared -o xcsf.cp310-win_amd64.pyd -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\xcsf.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\xcsf.dir\linkLibs.rsp

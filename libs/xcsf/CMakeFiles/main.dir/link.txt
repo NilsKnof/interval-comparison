@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\main.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\main.dir/objects.a @CMakeFiles\main.dir\objects1.rsp
+C:\msys64\ucrt64\bin\cc.exe  -W -Wall -Wextra  -Wunused  -Wfatal-errors -Wcast-qual -Wredundant-decls -Winit-self -pedantic -Wno-unused-function -pipe -Wmaybe-uninitialized -fPIC -DPARALLEL -DPARALLEL_MATCH -DPARALLEL_PRED -DPARALLEL_UPDATE -O3 -march=native -flto -funroll-loops -ffat-lto-objects -fno-semantic-interposition -Wl,--whole-archive CMakeFiles\main.dir/objects.a -Wl,--no-whole-archive -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\main.dir\linkLibs.rsp

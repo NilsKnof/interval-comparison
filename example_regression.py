@@ -36,8 +36,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler, minmax_scale
 from tqdm import tqdm
-
 from libs import xcsf
+import pandas
 
 np.set_printoptions(suppress=True)
 

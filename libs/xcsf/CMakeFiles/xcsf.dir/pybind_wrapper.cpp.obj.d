@@ -1,10 +1,37 @@
 xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\pybind_wrapper.cpp \
- C:/msys64/ucrt64/include/c++/13.1.0/fstream \
+ C:/msys64/ucrt64/include/c++/13.1.0/chrono \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/chrono.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/ratio \
+ C:/msys64/ucrt64/include/c++/13.1.0/type_traits \
+ C:/msys64/ucrt64/include/c++/13.1.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/limits \
+ C:/msys64/ucrt64/include/c++/13.1.0/ctime \
+ C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ C:/msys64/ucrt64/include/_timeval.h \
+ C:/msys64/ucrt64/include/pthread_time.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/parse_numbers.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/cstdio \
+ C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/fstream \
  C:/msys64/ucrt64/include/c++/13.1.0/istream \
  C:/msys64/ucrt64/include/c++/13.1.0/ios \
  C:/msys64/ucrt64/include/c++/13.1.0/iosfwd \
@@ -12,36 +39,25 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/memoryfwd.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/postypes.h \
  C:/msys64/ucrt64/include/c++/13.1.0/cwchar \
- C:/msys64/ucrt64/include/wchar.h C:/msys64/ucrt64/include/corecrt.h \
- C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
- C:/msys64/ucrt64/include/_mingw_secapi.h \
- C:/msys64/ucrt64/include/vadefs.h \
- C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/wchar.h \
  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
- C:/msys64/ucrt64/include/_mingw_off_t.h \
  C:/msys64/ucrt64/include/_mingw_stat64.h \
- C:/msys64/ucrt64/include/swprintf.inl \
  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
  C:/msys64/ucrt64/include/c++/13.1.0/exception \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/exception.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_ptr.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_defines.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_init_exception.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
- C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
  C:/msys64/ucrt64/include/c++/13.1.0/typeinfo \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/hash_bytes.h \
  C:/msys64/ucrt64/include/c++/13.1.0/new \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/move.h \
- C:/msys64/ucrt64/include/c++/13.1.0/type_traits \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/nested_exception.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/char_traits.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/localefwd.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/ucrt64/include/c++/13.1.0/clocale \
- C:/msys64/ucrt64/include/locale.h C:/msys64/ucrt64/include/stdio.h \
- C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ C:/msys64/ucrt64/include/locale.h \
  C:/msys64/ucrt64/include/c++/13.1.0/cctype \
  C:/msys64/ucrt64/include/ctype.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/ios_base.h \
@@ -55,10 +71,6 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
  C:/msys64/ucrt64/include/limits.h C:/msys64/ucrt64/include/signal.h \
  C:/msys64/ucrt64/include/pthread_signal.h \
- C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
- C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
- C:/msys64/ucrt64/include/_timeval.h \
- C:/msys64/ucrt64/include/pthread_time.h \
  C:/msys64/ucrt64/include/pthread_compat.h \
  C:/msys64/ucrt64/include/pthread_unistd.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/atomic_word.h \
@@ -102,7 +114,6 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/include/malloc.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
- C:/msys64/ucrt64/include/c++/13.1.0/cstdio \
  C:/msys64/ucrt64/include/c++/13.1.0/cerrno \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/charconv.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/functional_hash.h \
@@ -129,6 +140,13 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/fstream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/iomanip \
+ C:/msys64/ucrt64/include/c++/13.1.0/locale \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_conv.h \
  C:/msys64/ucrt64/include/c++/13.1.0/iostream \
  D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/pybind11/include/pybind11/numpy.h \
  D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/pybind11/include/pybind11/pybind11.h \
@@ -144,8 +162,6 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/include/assert.h \
  C:/Users/nilsk/AppData/Local/Programs/Python/Python310/Include/pyport.h \
  C:/msys64/ucrt64/include/inttypes.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/13.1.0/math.h \
  C:/msys64/ucrt64/include/c++/13.1.0/cmath \
  C:/msys64/ucrt64/include/math.h C:/msys64/ucrt64/include/sys/stat.h \
@@ -298,7 +314,6 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/pybind11/include/pybind11/detail/typeid.h \
  C:/msys64/ucrt64/include/c++/13.1.0/cxxabi.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
- C:/msys64/ucrt64/include/c++/13.1.0/cstdint \
  C:/msys64/ucrt64/include/c++/13.1.0/array \
  C:/msys64/ucrt64/include/c++/13.1.0/compare \
  C:/msys64/ucrt64/include/c++/13.1.0/functional \
@@ -317,14 +332,38 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/13.1.0/numeric \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_numeric.h \
+ D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/pybind11/include/pybind11/stl.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/deque \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_deque.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/deque.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/list \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_list.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/list.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/map \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tree.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_map.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_multimap.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/set \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_set.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_multiset.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/valarray \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/valarray_array.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/valarray_array.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/valarray_before.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/slice_array.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/valarray_after.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/gslice.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/gslice_array.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/mask_array.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/indirect_array.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\action.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\xcsf.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\utils.h \
  D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/cJSON/cJSON.h \
  D:/Coding\ Stuff/Bachelorarbeit/repos/xcsf/lib/dSFMT/dSFMT.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/float.h \
  C:/msys64/ucrt64/include/float.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\clset.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\clset_neural.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\condition.h \
@@ -333,4 +372,8 @@ xcsf/CMakeFiles/xcsf.dir/pybind_wrapper.cpp.obj: \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\loss.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\prediction.h \
  D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\xcs_rl.h \
- D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\xcs_supervised.h
+ D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\xcs_supervised.h \
+ D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\pybind_callback.h \
+ D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\pybind_callback_checkpoint.h \
+ D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\pybind_utils.h \
+ D:\Coding\ Stuff\Bachelorarbeit\repos\xcsf\xcsf\pybind_callback_earlystop.h

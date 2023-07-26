@@ -18,6 +18,7 @@ xcsf/CMakeFiles/xcs.dir/utils.c.obj: \
  C:/msys64/ucrt64/include/assert.h C:/msys64/ucrt64/include/inttypes.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/math.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
  C:/msys64/ucrt64/include/stdlib.h \
  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
@@ -26,9 +27,8 @@ xcsf/CMakeFiles/xcs.dir/utils.c.obj: \
  C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
  C:/msys64/ucrt64/include/malloc.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
- C:/msys64/ucrt64/include/errno.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
- C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/time.h \
+ C:/msys64/ucrt64/include/sys/timeb.h \
  C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
  C:/msys64/ucrt64/include/_timeval.h \
  C:/msys64/ucrt64/include/pthread_time.h

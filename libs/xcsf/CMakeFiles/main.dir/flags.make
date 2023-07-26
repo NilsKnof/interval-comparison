@@ -6,5 +6,5 @@ C_DEFINES = -DDSFMT_MEXP=19937
 
 C_INCLUDES = 
 
-C_FLAGS =  -W -Wall -Wextra  -Wunused  -Wfatal-errors -Wcast-qual -Wredundant-decls -Winit-self -pedantic -Wno-unused-function -pipe -Wmaybe-uninitialized -fPIC -DPARALLEL -DPARALLEL_MATCH -DPARALLEL_PRED -DPARALLEL_UPDATE -O3 -march=native -flto -funroll-loops -ffat-lto-objects -fno-semantic-interposition -std=gnu11 -fopenmp
+C_FLAGS =  -W -Wall -Wextra  -Wunused  -Wfatal-errors -Wcast-qual -Wredundant-decls -Winit-self -pedantic -Wno-unused-function -pipe -Wformat -Wformat-security -Wformat-nonliteral -Wformat-y2k -Wformat=2 -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wundef -Wmaybe-uninitialized -fPIC -DPARALLEL -DPARALLEL_MATCH -DPARALLEL_PRED -DPARALLEL_UPDATE -O3 -march=native -flto -funroll-loops -ffat-lto-objects -fno-semantic-interposition -std=gnu11 -fopenmp
 

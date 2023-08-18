@@ -42,12 +42,14 @@ def cli():
               "--endseed",
               type=click.IntRange(min=0),
               default=0,)
+@click.option("--experiment-name", type=str, required=True)
 @click.argument('NPZFILE')
 @click.pass_context
-def runmany(ctx, startseed, endseed, npzfile):
+def runmany(ctx, startseed, endseed, experiment_name, npzfile):
     for seed in range(startseed, endseed + 1):
         ctx.invoke(
             run,
+            experiment_name=experiment_name,
             npzfile=npzfile,
             seed=seed,
         )
@@ -58,8 +60,9 @@ def runmany(ctx, startseed, endseed, npzfile):
               "--seed",
               type=click.IntRange(min=0),
               default=0,)
+@click.option("--experiment-name", type=str, required=True)
 @click.argument('NPZFILE')
-def run(npzfile, seed):
+def run(experiment_name, npzfile, seed):
     y_dim = 1
     n_actions = 1
     alpha = 0.1
@@ -111,7 +114,7 @@ def run(npzfile, seed):
     }
 
     mlflow.set_tracking_uri('data/results/')
-    mlflow.set_experiment("runmany")
+    mlflow.set_experiment("rsl-K5-DX5-N1000")
     print("Tracking URI:", mlflow.get_tracking_uri())
     with mlflow.start_run(run_name=npzfile[5:-4]) as run:
         # training data

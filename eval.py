@@ -30,6 +30,6 @@ cli.add_command(run)
 
 if __name__ == '__main__':
     mlflow.set_tracking_uri('data/results/')
-    df = mlflow.search_runs(experiment_names=["runmany"])
+    df = mlflow.search_runs(experiment_names=["rsl-K5-DX5-N1000"])
     pass
     cli()

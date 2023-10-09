@@ -1,7 +1,85 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import mlflow
 import seaborn as sns
+import pandas as pd
+
+# copied from the run-rsl-bench repository to generate the table, summarizing the used datasets: https://doi.org/10.5281/zenodo.7915821
+def datasets(path):
+    print("test")
+    fnames = os.listdir(path)
+
+    def entry(fname):
+        data = np.load(f"{path}/{fname}", allow_pickle=True)
+        X = data["X"]
+        N, DX = X.shape
+        centers = data["centers"]
+        K = len(centers)
+
+        return dict(N=N,
+                    DX=DX,
+                    K=K,
+                    linear_model_mse=data["linear_model_mse"][()],
+                    linear_model_rsquared=data["linear_model_rsquared"][()],
+                    rsl_model_mse=data["rsl_model_mse"][()],
+                    rsl_model_rsquared=data["rsl_model_rsquared"][()])
+
+    index = ["DX", "K", "N"]
+    df = pd.DataFrame(map(entry, fnames))
+
+    summary = df.set_index(index).sort_index().index
+    print(np.unique(summary, return_counts=True))
+
+    fig, ax = plt.subplots(2, layout="constrained", figsize=(10, 3 * 10))
+    sns.boxplot(
+        data=df,
+        x="DX",
+        hue="K",
+        y="linear_model_mse",
+        ax=ax[0],
+    )
+    sns.boxplot(
+        data=df,
+        x="DX",
+        hue="K",
+        y="rsl_model_mse",
+        ax=ax[1],
+    )
+    sns.stripplot(data=df,
+                  x="DX",
+                  hue="K",
+                  y="linear_model_mse",
+                  ax=ax[0],
+                  dodge=True,
+                  palette="dark:0",
+                  size=3)
+    sns.stripplot(data=df,
+                  x="DX",
+                  hue="K",
+                  y="rsl_model_mse",
+                  ax=ax[1],
+                  dodge=True,
+                  palette="dark:0",
+                  size=3)
+    plt.show()
+
+    means = df.groupby(index).mean().round(2)
+    n_datasets = df.groupby(index).apply(len).unique()
+    print(f"Mean of the {n_datasets} datasets per {index} combination")
+    print(means[["linear_model_mse", "rsl_model_mse"]].to_latex())
+
+    # A more space saving representation.
+    means = means[["linear_model_mse", "rsl_model_mse"
+                   ]].reset_index().set_index(["DX", "N", "K"]).unstack("K")
+    print(means.to_latex())
+
+    import IPython
+    IPython.embed(banner1="")
+    import sys
+    sys.exit(1)
+    # consider running `globals().update(locals())` in the shell to fix not being
+    # able to put scopes around variables
 
 if __name__ == '__main__':
     # copied parts from the run-rsl-bench repository: https://doi.org/10.5281/zenodo.7915821
